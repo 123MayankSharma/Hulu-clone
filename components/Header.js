@@ -6,8 +6,8 @@ import { BadgeCheckIcon, CollectionIcon, HomeIcon, LightningBoltIcon, SearchIcon
 
 const Header = () => {
     return (<>
-        <header className="text-left flex flex-col">
-            <div className="flex">
+        <header className="flex flex-col sm:flex-row m-5 justify-between items-center ">
+            <div className="flex flex-grow justify-evenly max-w-2xl">
                 <HeaderIcons title='Home' Icon={HomeIcon} />
                 <HeaderIcons title='Trending' Icon={LightningBoltIcon} />
                 <HeaderIcons title='Verified' Icon={BadgeCheckIcon} />
@@ -18,7 +18,7 @@ const Header = () => {
 
 
 
-              <div  className="flex flex-col items-center -mt-6 sm:items-end sm:-mt-20">
+              <div  >
                 <Image
                     src="https://img.icons8.com/color/2x/hulu.png"
                     width={100} height={100} />
